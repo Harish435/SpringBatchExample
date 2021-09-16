@@ -1,5 +1,6 @@
 package com.hclmini.LearnBatch.Batch;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -26,7 +27,7 @@ public class Processor implements ItemProcessor<User, User> {
 		String deptcode=user.getDept();
 		String dept=Dept_Names.get(deptcode);
 		user.setDept(dept);
-		
+		user.setTime(new Date());
 		
 		return user;
 	}

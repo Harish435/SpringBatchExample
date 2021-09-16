@@ -1,0 +1,4 @@
+spring:
+  batch:
+    job:
+      enabled: false  jpa:    generate-ddl: true
